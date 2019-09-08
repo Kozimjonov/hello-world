@@ -1,17 +1,75 @@
-* {
-  margin:0px;
-  padding:0px;
-}
+*{margin: 0; padding: 0; }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body{
+    background: #fefefe ;
 }
+.header,
+.banner{
+    width: 755px;
+    min-height: 100px;
+    border: 0px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18 px;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    /*width: 100%;*/
+    border-bottom: 3px solid #9ec4f1;
+    background: #ffffff;
+    box-shadow: 0 0 0 1px #f2f2f2;
+    margin-top: 20px;
+}
+.header ul li a {
+    border: 1px solid #f5f5f5;
+    padding: 11px 27px;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 0 0 #fdfdfd;
+    color: #5f5d68;
+    font-size: 15px;
+    line-height: 10px;
+    font-family: 'Trebuchet MS';
+    text-decoration: none;
+}
+.header ul li:nth-child(in + 2) a{
+    border-left: none;
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+.header ul li a:hover{
+    color: black;
+}
+.content{
+    width: 755px;
+    min-height: 100px;
+    margin: auto;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 19px;
+}
+.content-left{
+    width: 478px;
+    min-height: 300px;
+    background: white;
+    box-shadow: 3px 3px 7px/*размытие*/ 0/*прозрачность*/ rgba(0,0,0, 0.5);
+    padding: 30px;
+    box-sizing: border-box;
+}
+   .content-right{
+   width: 267px;
+   min-height: 300px;
+   background: white;
+   box-shadow: 3px 3px 7px/*размытие*/ 0/*прозрачность*/ rgba(0,0,0, 0.5);
+   padding: 30px;
+   box-sizing: border-box;
+}
+.footer{
+    width: 755px;
+    min-height: 53px;
+    /*border: 1px solid black;*/
+    margin: auto;
 }
